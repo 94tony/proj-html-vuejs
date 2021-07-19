@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.top-nav{
+    background-color: #262626;
+    
+    display: flex;
+    justify-content:space-between; 
+}
+
+.navbar-brand  img {
+    width:140px;
+  
+}
+
+.logo{
+    display: flex;
+    
+
+}
+
+.button-right{
+    border: 1px black solid;
+    color: white;
+    background-color: #7AA93C;   
+    width: 102px;
+    height: 35px;
+    
+    border-radius: 6px;
+    
+}
+
+.button-right h3{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 34px;
+}
