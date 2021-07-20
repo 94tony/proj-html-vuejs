@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/script.js"></script>
+
 
 </head>
 <body>
@@ -15,24 +17,133 @@
 
     <div id="app">
        <header class="header">
-        <nav class="top-nav navbar d-flex ">
-            <div class="container d-flex justify-content-between">
-              <a class="navbar-brand d-flex justify-content-between" href="#">
+        <nav class="top-nav">
+            <div class="logo">
+              <a class=" " href="#">
                 <img src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg" alt="">
+
+                
               </a>
-                <div class="testo">
-                    <div class="button-right">
-                        <h3>Buy Now</h3>
-                    </div>
+            </div>
+                 <div class="testo">
+                    <a class="link" href="">
+                        <div class="button-right">
+                            <h3>Buy Now</h3>
+                        </div>
+                    </a>
+                </div>
+                 
+             
+           
+        </nav>
+
+        <nav class="top-nav-social navbar d-flex ">
+            <div class="container-fluid d-flex justify-content-start position-relative">
+              
+                <ul class="d-flex icon-social">
+                    <li> 
+                         <a href="">
+                            <i class="fab fa-facebook-square"></i>
+                         </a>
+                    </li>
+                   
+                    <li> 
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li> 
+                        <a href="">
+                            <i class="fab fa-wordpress"></i>
+                        </a>
+                    </li>
+
+                    <li> 
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                
+               
+
+                <div class="testo position-absolute top-50 start-50 translate-middle">
+                    <h3>FREE express international delivery + EASY returns</h3>
                 </div>
                 
              
             </div>
-          </nav>
+        </nav>
+        <!-- chiedere a cosa si riferisce nel documento link head e footer -->
 
+        <nav class="top-nav-product navbar navbar-expand-lg d-flex position-relative ">
+            <div class="container-fluid d-flex justify-content-start ">
+                    
+                <div class="svg position-absolute">
+                    <img src="./img/w.oncep_..svg" alt="">
+                </div>
+                <ul class="navbar-nav  position-absolute top-50 start-50 translate-middle ">
+                    
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> -->
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Shop
+                        </a>
+                    </li>
 
-           </nav>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="icons position-absolute ">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>£ 0.00</span>
+                </div>
+               
+            </div>
+
+              
+             
+            </div>
+        </nav>
+        
+        
+            
+           
+
+           
+
+           
        </header>
+
+      
     </div>
     
 

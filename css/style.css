@@ -5,13 +5,18 @@
 }
 .top-nav{
     background-color: #262626;
+    height: 70px;
+    position: relative;
     
-    display: flex;
-    justify-content:space-between; 
+   
 }
 
-.navbar-brand  img {
+.logo a img {
     width:140px;
+    position: absolute; 
+    top: 22px;
+    left: 70px;
+
   
 }
 
@@ -29,6 +34,9 @@
     height: 35px;
     
     border-radius: 6px;
+    position: absolute;
+    top: 14px;
+    right: 64px;
     
 }
 
@@ -37,4 +45,64 @@
     font-size: 13px;
     text-align: center;
     line-height: 34px;
+    
+}
+.link{
+    text-decoration: none;
+}
+
+
+.top-nav-social{
+    background-color: black;
+    height: 55px;
+}
+
+.icon-social{
+    list-style: none;
+    margin-right: 2px;
+}
+
+.icon-social li a {
+    margin: 0px 16px;
+    color: white;
+}
+
+.testo h3{
+    font-size: 13px;
+    color: white;
+    
+}
+
+.top-nav-product{
+    height: 55px;
+   
+}
+
+.svg img {
+    width: 130px;
+}
+
+.svg{
+    top: 22px;
+    left: 70px;
+
+}
+
+.nav-item a {
+    color:  black;
+}
+
+.icons i{
+    color: black;
+   
+}
+
+.icons{
+    right: 90px;
+    font-size: 30px;
+    
+}
+
+.icons span{
+    font-size: 15px;
 }
