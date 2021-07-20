@@ -106,3 +106,39 @@
 .icons span{
     font-size: 15px;
 }
+
+.women-image{
+    width: 100%;
+}
+
+
+
+.photo{
+   
+    height: 450px;
+    margin: 0px 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contain-a{
+    background-image: url(https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/h1_banner-1.jpg);
+    
+}
+
+.contain-b{
+    background-image: url(../img/womenSale.jpg);
+   
+}
+
+.contain-c{
+    background-image: url(../img/accesories.jpg);
+   
+}
+
+.play{
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+}
