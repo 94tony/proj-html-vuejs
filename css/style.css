@@ -55,6 +55,7 @@
 .top-nav-social{
     background-color: black;
     height: 55px;
+    
 }
 
 .icon-social{
@@ -128,11 +129,13 @@
 
 .contain-b{
     background-image: url(../img/womenSale.jpg);
+    margin-left: 50px;
    
 }
 
 .contain-c{
     background-image: url(../img/accesories.jpg);
+    margin-right: 17px;
    
 }
 
@@ -141,4 +144,30 @@
     left: 50%;
     color: white;
     font-size: 50px;
+}
+
+.jambotrone img {
+    width: 100%;
+}
+
+.anteprima{
+    margin-top: 130px;
+}
+
+.recent{
+    margin-top: 100px;
+}
+
+.card-photo{
+    margin: 50px 17px;
+    
+}
+
+.card-photo img{
+    width: 260px;
+    margin-top: 50px;
+}
+
+.auto{
+    margin: 2px;
 }
