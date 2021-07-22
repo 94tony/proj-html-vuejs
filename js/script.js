@@ -64,14 +64,40 @@ const app = new Vue({
                         e:"Single Blog",
                         
 
-                    }   
-                   
+                    },   
+                
+                
+                product:[
+                    {   
+                        id:1,
+                        img:'./img/womenSale.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                    
+                    {
+                        id:2,
+                        img:'./img/womenSale.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    }
+                        ],
+
+                whishList:[],
                    
                     
              },
     
     methods: {
-     
-    },
+                // pushWishList:function(element){
+                //     if(!this.whishList.includes(element)){
+                //         if(this.whishList.length < 3){
+                //             this.whishList.push(element)
+                //         }
+                //     }
+                // }
+             },
     
   })
