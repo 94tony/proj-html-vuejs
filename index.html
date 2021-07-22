@@ -7,214 +7,460 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    
 
 
 </head>
 <body>
 
     
-
     <div id="app">
-       <header class="header">
-        <nav class="top-nav ">
-            <div class="logo">
-              <a class=" " href="#">
-                <img src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg" alt="">
-
-                
-              </a>
-            </div>
-                 <div class="testo">
-                    <a class="link" href="">
-                        <div class="button-right">
-                            <h3>Buy Now</h3>
-                        </div>
-                    </a>
-                </div>
+        <header class="header">
+         <nav class="top-nav ">
+             <div class="logo">
+               <a class=" " href="#">
+                 <img src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg" alt="">
+ 
                  
-             
-           
-        </nav>
-
-        <nav class="top-nav-social navbar d-flex  ">
-            <div class="container-fluid d-flex justify-content-start position-relative">
+               </a>
+             </div>
+                  <div class="testo">
+                     <a class="link" href="">
+                         <div class="button-right">
+                             <h3>Buy Now</h3>
+                         </div>
+                     </a>
+                 </div>
+                  
               
-                <ul class="d-flex icon-social">
-                    <li> 
-                         <a href="">
-                            <i class="fab fa-facebook-square"></i>
-                         </a>
-                    </li>
-                   
-                    <li> 
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li> 
-                        <a href="">
-                            <i class="fab fa-wordpress"></i>
-                        </a>
-                    </li>
-
-                    <li> 
-                        <a href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-
-                </ul>
-                
+            
+         </nav>
+ 
+         <nav class="top-nav-social navbar d-flex  ">
+             <div class="container-fluid d-flex justify-content-start position-relative">
                
-
-                <div class="testo position-absolute top-50 start-50 translate-middle">
-                    <h3>FREE express international delivery + EASY returns</h3>
-                </div>
+                 <ul class="d-flex icon-social">
+                     <li> 
+                          <a href="">
+                             <i class="fab fa-facebook-square"></i>
+                          </a>
+                     </li>
+                    
+                     <li> 
+                         <a href="">
+                             <i class="fab fa-twitter"></i>
+                         </a>
+                     </li>
+ 
+                     <li> 
+                         <a href="">
+                             <i class="fab fa-wordpress"></i>
+                         </a>
+                     </li>
+ 
+                     <li> 
+                         <a href="">
+                             <i class="fab fa-instagram"></i>
+                         </a>
+                     </li>
+ 
+                 </ul>
+                 
                 
-             
-            </div>
-        </nav>
-        <!-- chiedere a cosa si riferisce nel documento link head e footer -->
-
-        <nav class="top-nav-product sticky-top navbar navbar-expand-lg d-flex position-relative ">
-            <div class="container-fluid d-flex justify-content-start ">
-                    
-                <div class="svg position-absolute">
-                    <img src="./img/w.oncep_..svg" alt="">
-                </div>
-                <ul class="navbar-nav  position-absolute top-50 start-50 translate-middle ">
-                    
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ 
+                 <div class="testo position-absolute top-50 start-50 translate-middle">
+                     <h3>FREE express international delivery + EASY returns</h3>
+                 </div>
+                 
+              
+             </div>
+         </nav>
+         <!-- chiedere a cosa si riferisce nel documento link head e footer -->
+ 
+         <nav class="top-nav-product sticky-top navbar navbar-expand-lg d-flex position-relative ">
+             <div class="container-fluid d-flex justify-content-start ">
+                     
+                 <div class="svg position-absolute">
+                     <img src="./img/w.oncep_..svg" alt="">
+                 </div>
+                 <ul class="navbar-nav  position-absolute top-50 start-50 translate-middle ">
+                     
+                     <li class="box-tenda position-relative">
+                         <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            
                             Home
-                        </a>
-                    </li>
-                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> -->
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         </a>
+                         <ul class="position-absolute tenda-menu  " >
+                            <li class=""v-for="value  in home" ><a  class="" href="#"> {{value}}</a></li>
+                           
+
+                        </ul>
+                     </li> 
+                     <!-- copia in colla di questo  -->
+                     <li class="box-tenda position-relative">
+                        <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
                            Shop
                         </a>
-                    </li>
-
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Page
+                        <ul class="position-absolute tenda-menu  " >
+                           <li class=""v-for="value  in shop" ><a class="" href="#">{{value}}</a></li>
+                       </ul>
+                     </li> 
+ 
+                     <li class="box-tenda position-relative">
+                        <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
+                           Page
                         </a>
-                    </li>
-
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Blog
+                        <ul class="position-absolute tenda-menu  " >
+                           <li class=""v-for="value  in page" ><a class="" href="#">{{value}}</a></li>
+                       </ul>
+                     </li> 
+ 
+                     <li class="box-tenda position-relative">
+                        <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
+                           Blog
                         </a>
-                    </li>
-
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact
-                        </a>
-                    </li>
-                    
-                </ul>
-                <div class="icons position-absolute ">
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-shopping-bag"></i>
-                    <span>£ 0.00</span>
-                </div>
+                        <ul class="position-absolute tenda-menu  " >
+                           <li class=""v-for="value  in blog" ><a class="" href="#">{{value}}</a></li>
+                       </ul>
+                     </li> 
+ 
+                     <li class="box-tenda">
+                         <a class="" href="#">
+                             Contact
+                         </a>
+                     </li>
+                     
+                 </ul>
+                 <div class="icons position-absolute ">
+                     <i class="far fa-heart"></i>
+                     <i class="fas fa-shopping-bag"></i>
+                     <span>£ 0.00</span>
+                 </div>
+                
+             </div>
+ 
                
-            </div>
-
+              
+             </div>
+         </nav>
+         
+         
+             
+            
+ 
+            
+ 
+            
+        </header>
+        
+        <div>
+             
+             <div class="jambotrone">
+                 <div class="row">
+                     <div class="col">
+                         <img src="./img/jambo.jpg" alt="">
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="anteprima">
+                 <div class="row d-flex ">
+                     <div class="col-5 photo contain-a position-relative">
+                         <div class="play position-absolute">
+                         <i class="far fa-play-circle position-absolute"></i>
+ 
+                         </div>
+                     </div>
+                     <div class="col-3 photo contain-b  ">
+                         
+                     </div>
+                     <div class="col-3 photo contain-c ">
+                     </div>
+                 </div>
+             </div>
+             
+             <div >
+                 <h1 class="text-center recent">Recent Products</h1> <br>
+                 <h6 class="text-center">Preorder now to receive exclusive deals & gifts</h6>
+             </div>
+ 
+             <div class="container d-flex  ">
+                
+                
+                     <div class=" card-photo">
+                         <img src="./img/womenSale.jpg" alt="">
+                         <hr>
+                         <a href="">
+                             Printed A-Line Top
+                         </a>
+                         <h5>£299-£330</h5>
+               
+                       </div>
+               
+                       <div class=" card-photo">
+                         <img src="./img/womenSale.jpg" alt="">
+                         <hr>
+ 
+               
+                       </div>
+               
+                       <div class=" card-photo">
+                         <img src="./img/womenSale.jpg" alt="">
+                         <hr>
+ 
+               
+                       </div>
+               
+                       <div class=" card-photo">
+                         <img src="./img/womenSale.jpg" alt="">
+                         <hr>
+ 
+               
+                       </div>
+                  
+ 
+                 
+             </div>
+ 
+             
+             <div class="container d-flex  ">
+                
+                
+                 <div class=" card-photo">
+                     <img src="./img/womenSale.jpg" alt="">
+                     <hr>
+           
+                   </div>
+           
+                   <div class=" card-photo">
+                     <img src="./img/womenSale.jpg" alt="">
+                     <hr>
+ 
+           
+                   </div>
+           
+                   <div class=" card-photo">
+                     <img src="./img/womenSale.jpg" alt="">
+                     <hr>
+ 
+           
+                   </div>
+           
+                   <div class=" card-photo">
+                     <img src="./img/womenSale.jpg" alt="">
+                     <hr>
+ 
+           
+                   </div>
               
              
-            </div>
-        </nav>
-        
-        
+                 </div>
+             </div>
+ 
+             <div class="container campaign">
+                 <div class="row">
+                     <div class="col-12">
+                         <img src="./img/campaign.jpg" alt="">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="container section-box">
+                 <div class="row">
+                     <div class="section  col-4">
+                         <div class="center">
+                             <h3 >
+                                 <i class="fas fa-rocket"></i>
+                                 Free Delivery
+                             </h3>
+                             <h6>
+                                 For all oders over $100, <br> consectetur adipim scing elit.
+                             </h6>
+                         </div>
+                     </div>
+                     <div class=" section col-4">
+                         <div class="center">
+                             
+                             <h3>
+                                 <i class="fas fa-history"></i>
+                                 90 Days Return                                
+                             </h3>
+                             <h6>
+                                 If goods have problems, consectetur adipim scing elit. 
+                             </h6>
+                         </div>
+                     </div>
+                     <div class=" section col-4">
+                         <div class="center">
+                             <h3 >
+                                 <i class="far fa-credit-card"></i> 
+                                 Secure Payment                            </h3>
+                             <h6>
+                                 100% secure payment, consectetur adipim scing elit.
+                             </h6>
+                         </div>
+                     </div>
+ 
+ 
+                 </div>
+             </div>
+ 
+             <div >
+                 <h1 class="text-center recent">Recent Products</h1> <br>
+                 <h6 class="text-center">Preorder now to receive exclusive deals & gifts</h6>
+             </div>
+ 
+             <div class="container space-top">
+                 <div class="row">
+                     <div class="col-3 selections ">
+                         <img src="./img/summer.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-3 selections mt-5">
+                         <img src="./img/summer.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-3 selections">
+                         <img src="./img/summer.jpg" alt="">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="container campaign space-top ">
+                 <div class="row">
+                     <div class="col-12">
+                         <img src="./img/jambo2.jpg" alt="">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div >
+                 <h1 class="text-center recent">Recent Products</h1> <br>
+                 <h6 class="text-center">Preorder now to receive exclusive deals & gifts</h6>
+             </div>
+ 
+             <div class="container space-top">
+                 <div class="row">
+                     <div class="col-3 selections ">
+                         <img src="./img/camery.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-3 selections mt-5">
+                         <img src="./img/camery.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-3 selections">
+                         <img src="./img/camery.jpg" alt="">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class=" space-top">
+                 <div class="row">
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+ 
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+                     <div class="col-2 section position-relative">
+                         <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                     </div>
+                     
+                 </div>
+             </div>
             
-           
-
-           
-
-           
-       </header>
-       
-       <main>
-            
-            <div class="jambotrone">
-                <div class="row">
-                    <div class="col">
-                        <img src="./img/jambo.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="anteprima">
-                <div class="row d-flex ">
-                    <div class="col-5 photo contain-a position-relative">
-                        <div class="play position-absolute">
-                        <i class="far fa-play-circle position-absolute"></i>
-
-                        </div>
-                    </div>
-                    <div class="col-3 photo contain-b  ">
+         </main>
+ 
+         <footer>
+             <div class="bkg-grey">
+                 <div class="row ">
+                     <div class="col">
+                         <div class="text">
+                             <h1 class="text-center recent">Recent Products</h1> 
+                             <h6 class="text-center">Preorder now to receive exclusive deals & gifts</h6>
+                         </div>
+ 
+                         <div class="email position-relative">
+                             
+                             <input class="position-absolute top-50 start-50 translate-middle" type="email" placeholder="         inserisci l'email" id="email" name="email">
+                             <button class="position-absolute top-50 start-50 translate-middle" type="submit">Send</button>
+                         </div>
+ 
+                         <div class="category position-relative">
+                             <ul class="d-flex position-absolute  list" >
+                                 <li>WHAT’S NEW</li>
+                                 <li>WOMEN</li>
+                                 <li>MEN</li>
+                                 <li>KIDS</li>
+                                 <li>TREND</li>
+                                 <li>CLOTHES</li>
+                                 <li>SHOES</li>
+                                 <li>DRESSES</li>
+ 
+                             </ul>
+                             <ul class="d-flex  position-relative position-absolute black-icon">
+                                 <li> 
+                                      <a href="">
+                                         <i class="fab fa-facebook-square"></i>
+                                      </a>
+                                 </li>
+                                
+                                 <li> 
+                                     <a href="">
+                                         <i class="fab fa-twitter"></i>
+                                     </a>
+                                 </li>
+             
+                                 <li> 
+                                     <a href="">
+                                         <i class="fab fa-wordpress"></i>
+                                     </a>
+                                 </li>
+             
+                                 <li> 
+                                     <a href="">
+                                         <i class="fab fa-instagram"></i>
+                                     </a>
+                                 </li>
+             
+                             </ul>
+                         </div>
+                         <div>
                         
-                    </div>
-                    <div class="col-3 photo contain-c ">
-                    </div>
-                </div>
-            </div>
-            
-            <div >
-                <h1 class="text-center recent">Recent Products</h1> <br>
-                <h6 class="text-center">Preorder now to receive exclusive deals & gifts</h6>
-            </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="black-footer">
+                 <div class="row">
+                     <div class="col text-center">Copyright © 2020 44Gatti. All Rights Reserved.</div>
+                 </div>
+             </div>
+         </footer>
+ 
+ 
+       
+     </div>
+     
+ 
+    <script src="./js/script.js"></script>
 
-            <div class="container d-flex auto ">
-               
-               
-                    <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-
-              
-                      </div>
-                 
-
-                
-            </div>
-
-        </main>
-
-
-      
-    </div>
-    
-
-    <script src="js/script.js"></script>
 </body>
 </html>
