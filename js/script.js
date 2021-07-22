@@ -45,6 +45,8 @@ const app = new Vue({
                     
 
                     },
+
+
                 page:
                     {
                         a:"About us",
@@ -91,13 +93,13 @@ const app = new Vue({
              },
     
     methods: {
-                // pushWishList:function(element){
-                //     if(!this.whishList.includes(element)){
-                //         if(this.whishList.length < 3){
-                //             this.whishList.push(element)
-                //         }
-                //     }
-                // }
+                 pushWishList(index){
+                        if(this.product !== this.whishList)
+                        {
+                             this.whishList.push(this.product [index])
+                        }
+                     
+                    }
              },
     
   })
