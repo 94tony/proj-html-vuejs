@@ -240,6 +240,11 @@
     
 }
 
+.space-top .row .section:hover img{
+	width: 200px;
+}
+
+
 .section-box{
     margin-top: 100px;
     margin-left: 10px;
@@ -300,6 +305,8 @@
     left: 220px;
 }
 
+
+
 .black-icon{
     color: black;
     top: 100px;
@@ -315,6 +322,10 @@
     color: black;
     margin: 0px 1px;
     font-size: 12px;
+}
+
+.black-icon li a i:hover{
+    color: red;
 }
 
 .black-footer{
