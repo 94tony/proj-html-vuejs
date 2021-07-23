@@ -72,7 +72,7 @@ const app = new Vue({
                 product:[
                     {   
                         id:1,
-                        img:'./img/womenSale.jpg',
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-63.jpg',
                         name:"Printed A-Line Top",
                         price:"£299-£330"
 
@@ -80,12 +80,61 @@ const app = new Vue({
                     
                     {
                         id:2,
-                        img:'./img/womenSale.jpg',
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-03.jpg',
                         name:"Printed A-Line Top",
                         price:"£299-£330"
 
-                    }
-                        ],
+                    },
+                    {
+                        id:3,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-05.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                    {
+                        id:4,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-60.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                    
+                   
+
+                   
+                ],
+
+                productB:[
+                    {
+                        id:5,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-31.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+    
+                    },
+                    {
+                        id:6,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-32.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                    {
+                        id:7,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-28.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                    {
+                        id:8,
+                        img:'https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/11/product-30-1.jpg',
+                        name:"Printed A-Line Top",
+                        price:"£299-£330"
+
+                    },
+                ],    
 
                 whishList:[],
                    
@@ -94,12 +143,15 @@ const app = new Vue({
     
     methods: {
                  pushWishList(index){
-                        if(this.product !== this.whishList)
-                        {
-                             this.whishList.push(this.product [index])
-                        }
-                     
-                    }
-             },
+                        
+                        
+                         this.whishList.push(this.product [index])
+                         
+                    },
+
+                 remove(index){
+                     this.whishList.splice(index,1)
+                 }   
+            },  
     
   })

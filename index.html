@@ -88,7 +88,7 @@
                     <ul class="navbar-nav  position-absolute top-50 start-50 translate-middle ">
                         
                         <li class="box-tenda position-relative">
-                            <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="tenda-link" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                
                                Home
                             </a>
@@ -100,7 +100,7 @@
                         </li> 
                         <!-- copia in colla di questo  -->
                         <li class="box-tenda position-relative">
-                           <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
+                           <a class="tenda-link" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
                               Shop
                            </a>
                            <ul class="position-absolute tenda-menu  " >
@@ -109,7 +109,7 @@
                         </li> 
     
                         <li class="box-tenda position-relative">
-                           <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
+                           <a class="tenda-link" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
                               Page
                            </a>
                            <ul class="position-absolute tenda-menu  " >
@@ -118,7 +118,7 @@
                         </li> 
     
                         <li class="box-tenda position-relative">
-                           <a class="" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
+                           <a class="tenda-link" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
                               Blog
                            </a>
                            <ul class="position-absolute tenda-menu  " >
@@ -127,7 +127,7 @@
                         </li> 
     
                         <li class="box-tenda">
-                            <a class="" href="#">
+                            <a class="tenda-link" href="#">
                                 Contact
                             </a>
                         </li>
@@ -155,8 +155,8 @@
                
            </header>
            
-           <div>
-                
+           
+            <main> 
                 <div class="jambotrone">
                     <div class="row">
                         <div class="col">
@@ -165,25 +165,25 @@
                     </div>
                 </div>
 
-                <div class="d-flex" v-for="(item, index) in whishList">
+                <div class="d-flex  flex-wrap" >
                        
-                    <div class="card-photo">
-                        
-                        <img :src="item.img"  alt=""> 
+                    <div class="card-photo col-3 " v-for="(item, index) in whishList">
+                        <h4>You Love This</h4>
+                        <img class="d-flex" :src="item.img"  alt=""> 
                         <hr>
                         <a href="">
                         {{item.name}}
 
                         </a>
                         <h5>{{item.price}}</h5>
-                        <i class="fas fa-heart"></i>
+                        <i @click=" remove(index)" class="fas fa-heart"></i>
               
                     </div>         
                 </div>
                 
 
    
-                <div class="wishlist" v-for=""></div>
+                
                 
                 <div class="anteprima">
                     <div class="row d-flex ">
@@ -229,41 +229,31 @@
     
                     
                 </div>
-               </div>
-                
-                <div class="container d-flex  ">
-                   
-                   
-                    <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-    
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-    
-              
-                      </div>
-              
-                      <div class=" card-photo">
-                        <img src="./img/womenSale.jpg" alt="">
-                        <hr>
-    
-              
-                      </div>
+               
+                <div class="container d-flex">
+   
                  
-                
+                   
+                    <div class="d-flex" v-for="(item, index) in productB">
+                       
+                        <div class="card-photo">
+                            
+                            <img :src="item.img"  alt=""> 
+                            <hr>
+                            <a href="">
+                            {{item.name}}
+    
+                            </a>
+                            <h5>{{item.price}}</h5>
+                            <i @click="pushWishList(index)" class="fas fa-heart"></i>
+                  
+                        </div>         
                     </div>
+                    
+    
+                    
                 </div>
+                
     
                 <div class="container campaign">
                     <div class="row">
@@ -325,11 +315,11 @@
                         </div>
     
                         <div class="col-3 selections mt-5">
-                            <img src="./img/summer.jpg" alt="">
+                            <img src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/h1_ct-4.jpg" alt="">
                         </div>
     
                         <div class="col-3 selections">
-                            <img src="./img/summer.jpg" alt="">
+                            <img src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/h1_ct-5.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -358,7 +348,7 @@
                         </div>
     
                         <div class="col-3 selections">
-                            <img src="./img/camery.jpg" alt="">
+                            <img src="./img/novel.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -370,20 +360,20 @@
                         </div>
     
                         <div class="col-2 section position-relative">
-                            <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/brand-2.jpg" alt="">
                         </div>
     
                         <div class="col-2 section position-relative">
-                            <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/brand-3.jpg" alt="">
                         </div>
                         <div class="col-2 section position-relative">
-                            <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/brand-4.jpg" alt="">
                         </div>
                         <div class="col-2 section position-relative">
-                            <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/brand-5.jpg" alt="">
                         </div>
                         <div class="col-2 section position-relative">
-                            <img class="position-absolute top-50 start-50 translate-middle" src="./img/brand-1.jpg" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" src="https://demo2wpopal.b-cdn.net/woncep/wp-content/uploads/2020/12/brand-6.jpg" alt="">
                         </div>
                         
                     </div>
